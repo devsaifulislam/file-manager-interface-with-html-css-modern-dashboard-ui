@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>File Manager Interface with HTML &amp; CSS 📁 | Modern Dashboard UI</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="file-manager">
+  <aside class="file-sidebar">
+    <div class="file-brand">
+      <span>◈</span>
+      CloudBox
+    </div>
+
+    <button class="upload-button" type="button">
+      ＋ Upload File
+    </button>
+
+    <nav class="file-navigation">
+      <a href="#" class="active">
+        <span>▣</span>
+        All Files
+        <small>24</small>
+      </a>
+
+      <a href="#">
+        <span>★</span>
+        Favorites
+        <small>8</small>
+      </a>
+
+      <a href="#">
+        <span>↗</span>
+        Shared With Me
+      </a>
+
+      <a href="#">
+        <span>▧</span>
+        Recent Files
+      </a>
+
+      <a href="#">
+        <span>♜</span>
+        Trash
+      </a>
+    </nav>
+
+    <div class="storage-box">
+      <div class="storage-heading">
+        <span>Storage</span>
+        <strong>72%</strong>
+      </div>
+
+      <div class="storage-bar">
+        <span></span>
+      </div>
+
+      <p>7.2 GB of 10 GB used</p>
+      <button type="button">Manage Storage</button>
+    </div>
+
+    <div class="file-profile">
+      <img
+        src="https://i.pravatar.cc/80?img=12"
+        alt="Saiful Islam"
+      >
+
+      <div>
+        <strong>Saiful Islam</strong>
+        <small>Free account</small>
+      </div>
+
+      <button type="button">•••</button>
+    </div>
+  </aside>
+
+  <main class="file-content">
+    <header class="file-header">
+      <div>
+        <p class="eyebrow">MY WORKSPACE</p>
+        <h1>All Files</h1>
+      </div>
+
+      <div class="header-actions">
+        <button class="search-button" type="button" aria-label="Search files">
+          ⌕
+        </button>
+        <button class="grid-button" type="button" aria-label="Grid view">
+          ▦
+        </button>
+      </div>
+    </header>
+
+    <div class="breadcrumb">
+      <a href="#">My Drive</a>
+      <span>/</span>
+      <strong>All Files</strong>
+    </div>
+
+    <section class="folder-section">
+      <div class="section-heading">
+        <h2>Folders</h2>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="folder-grid">
+        <a href="#" class="folder-card">
+          <span class="folder-icon yellow">▰</span>
+          <strong>Projects</strong>
+          <small>12 items</small>
+        </a>
+
+        <a href="#" class="folder-card">
+          <span class="folder-icon blue">▰</span>
+          <strong>Documents</strong>
+          <small>28 items</small>
+        </a>
+
+        <a href="#" class="folder-card">
+          <span class="folder-icon pink">▰</span>
+          <strong>Design Assets</strong>
+          <small>46 items</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="recent-files">
+      <div class="section-heading">
+        <h2>Recent Files</h2>
+        <select aria-label="Sort files">
+          <option>Recently modified</option>
+          <option>Name</option>
+          <option>File size</option>
+        </select>
+      </div>
+
+      <div class="file-table">
+        <div class="file-row file-row-heading">
+          <span>Name</span>
+          <span>Modified</span>
+          <span>Size</span>
+          <span></span>
+        </div>
+
+        <div class="file-row">
+          <div class="file-name">
+            <span class="file-icon pdf">PDF</span>
+            <div>
+              <strong>Project Proposal.pdf</strong>
+              <small>PDF Document</small>
+            </div>
+          </div>
+          <span>Today, 10:24 AM</span>
+          <span>2.4 MB</span>
+          <button type="button">•••</button>
+        </div>
+
+        <div class="file-row">
+          <div class="file-name">
+            <span class="file-icon figma">✦</span>
+            <div>
+              <strong>Dashboard Design.fig</strong>
+              <small>Figma File</small>
+            </div>
+          </div>
+          <span>Yesterday</span>
+          <span>8.7 MB</span>
+          <button type="button">•••</button>
+        </div>
+
+        <div class="file-row">
+          <div class="file-name">
+            <span class="file-icon image">IMG</span>
+            <div>
+              <strong>Hero Banner.png</strong>
+              <small>Image File</small>
+            </div>
+          </div>
+          <span>Sep 14, 2026</span>
+          <span>1.8 MB</span>
+          <button type="button">•••</button>
+        </div>
+
+        <div class="file-row">
+          <div class="file-name">
+            <span class="file-icon zip">ZIP</span>
+            <div>
+              <strong>Website Assets.zip</strong>
+              <small>Archive File</small>
+            </div>
+          </div>
+          <span>Sep 12, 2026</span>
+          <span>24.2 MB</span>
+          <button type="button">•••</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
